@@ -1,0 +1,95 @@
+.divSetMusic {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 320px;
+  height: 80px;
+
+  /* Blanco */
+
+  background: #fdfeff;
+  border-radius: 0px 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.imgSetMusic {
+  position: absolute;
+  left: 12.64%;
+  right: 21.63%;
+  top: 14.8%;
+  bottom: -36.96%;
+
+  /* Blanco */
+
+  background: #fdfeff;
+  /*  transform: rotate(-4.86deg); */
+}
+
+.headerSetMusic {
+  /* title-placeholder */
+
+  width: 208px;
+  height: 21px;
+
+  /* Body/Body Small - 14px/Medium */
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.5px;
+
+  /* Medios Tonos/Gris 5 */
+
+  color: #26262e;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.paragraphSetMusic {
+  /* caption-placeholder */
+
+  width: 208px;
+  height: 36px;
+
+  /* Body/Body Very Small - 12px/Regular */
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  letter-spacing: 0.5px;
+
+  /* Medios Tonos/Gris 4 */
+
+  color: #45464b;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}

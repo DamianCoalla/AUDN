@@ -13,15 +13,19 @@ import google from "../../assets/icons/google-logo.svg";
 function Start() {
   const navigate = useNavigate();
   const onclick = () => {
-    navigate(`/home`);
+    navigate(`/login`);
   };
   return (
     <div className="divStartContainer">
       <img src={logo} alt="logo" />
       <h1>Música a medida.</h1>
       <div className="divBtnscontainer">
-        <Link to={`home/`}>
-          <Buttons title="Registrarse Gratis" onClick={onclick} />
+        <Link to={`/login`}>
+          <Buttons
+            title="Registrarse Gratis"
+            onClick={onclick}
+            color="orange"
+          />
         </Link>
 
         <Buttons icon={google} title="Continuar con Google" />
