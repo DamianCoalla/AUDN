@@ -6,7 +6,7 @@ function Buttons(props) {
   console.log(props);
   return (
     <div>
-      <button className="btnStart" /*  color={`Buttons${props.color}`} */>
+      <button className={`btnStart bg-${props.color}`}>
         <img src={props.icon} alt="" />
         {props.title}
       </button>
