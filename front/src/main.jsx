@@ -8,6 +8,8 @@ import "./index.css";
 import Home from "./Components/Home/Home.jsx";
 import LogInEmail from "./Components/RegisterEmail/RegisterEmail.jsx";
 import LogInUser from "./Components/RegisterEmail/RegisterUser/RegisterUser.jsx";
+import MainCupido from "./Components/MainCupido/MainCupido.jsx";
+import MainContextual from "./Components/MainContextual/MainContextual.jsx"
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,18 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+    errorElement: <ErrorPage />,
+  },
+
+  {
+    path: "/cupidomusical",
+    element: <MainCupido />,
+    errorElement: <ErrorPage />,
+  },
+
+  {
+    path: "/musicacontextual",
+    element: <MainContextual />,
     errorElement: <ErrorPage />,
   },
 ]);
