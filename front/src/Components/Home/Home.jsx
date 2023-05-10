@@ -11,9 +11,9 @@ function Home() {
   return (
     <>
       <div className="containerHomeHeader">
-        <h1>Música ya</h1>
-        <img src={clockInactive} alt="clock" />
-        <img src={bellActive} alt="bell" />
+        <h1 className="headerHome">Música ya</h1>
+        <img src={clockInactive} alt="clock" className="imgClock" />
+        <img src={bellActive} alt="bell" className="imgBell" />
       </div>
 
       <SetMusic

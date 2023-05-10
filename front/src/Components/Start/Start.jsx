@@ -28,9 +28,13 @@ function Start() {
           />
         </Link>
 
-        <Buttons icon={google} title="Continuar con Google" />
-        <Buttons icon={apple} title="Continuar con Apple" />
-        <Buttons title="Inicar Sesión" />
+        <Buttons
+          icon={google}
+          title="Continuar con Google"
+          color="tranparent"
+        />
+        <Buttons icon={apple} title="Continuar con Apple" color="tranparent" />
+        <Buttons title="Inicar Sesión" color="white" />
       </div>
     </div>
   );
