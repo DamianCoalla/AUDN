@@ -11,5 +11,15 @@
 }
 
 .bg-orange {
-  background-color: orange;
+  background-color: #ff8e0a;
+  color: #fdfeff;
+  border: 1px #ff8e0a solid;
+}
+.bg-tranparent {
+  background-color: transparent;
+  border: 1px #000000 solid;
+}
+.bg-white {
+  background-color: transparent;
+  border: none;
 }
