@@ -1,0 +1,17 @@
+.divLogInuserContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.divTermsAndConditionsContainer {
+  display: flex;
+}
+
+div span {
+  color: #ff8e0a;
+}
