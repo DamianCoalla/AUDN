@@ -1,4 +1,16 @@
 .containerHomeHeader {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+.imgClock {
+  margin-right: -130px;
+}
+
+.imgBell {
+  margin-right: -60px;
+}
+
+.headerHome {
+  margin-left: -50px;
 }
