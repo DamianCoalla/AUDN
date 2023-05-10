@@ -12,6 +12,9 @@ function LogIn() {
   const onclick = () => {
     navigate(`/login/user`);
   };
+  const handleOnChange = (event) => {
+    console.log(event.target.value);
+  };
   return (
     <div className="divLogInEmailContainer">
       <Link to={"/"}>
@@ -20,7 +23,7 @@ function LogIn() {
       <h1> ¿Cuál es tu correo electrónico?</h1>
       <h3> correo electrónico:</h3>
 
-      <SearchBar />
+      <SearchBar onChange={handleOnChange} />
       <Link to={`/login/user`}>
         <Buttons title="continuar" color="orange" onclick={onclick} />
       </Link>
