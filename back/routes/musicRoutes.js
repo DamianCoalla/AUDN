@@ -13,7 +13,7 @@ const {
 // const { runValidation } = require("../middleware/validator/index");
 // const { verifyToken } = require("../middleware/auth/auth");
 
-routes.post("/registro", regUser); //esto es para registro//
+routes.post("/register", regUser); //esto es para registro//
 routes.post("/login", loginUser); //esto es para login//
 
 routes.get("/songs", getSongs); //esto es para el buscador//
@@ -22,6 +22,6 @@ routes.post("/filter", filterGenere); //para los botones de generos//
 
 routes.post("/playlist", newPlaylist); //para crear las playlist//
 
-routes.get("/getPlaylist", getPlaylist);
+routes.get("/getPlaylist", getPlaylist); //para traer las playlist//
 
 module.exports = routes;
