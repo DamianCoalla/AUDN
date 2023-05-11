@@ -8,6 +8,7 @@ const {
   getSongs,
   newPlaylist,
   getPlaylist,
+  checkEmail,
 } = require("../controllers/musicControllers");
 
 // const { runValidation } = require("../middleware/validator/index");
@@ -15,6 +16,7 @@ const {
 
 routes.post("/register", regUser); //esto es para registro//
 routes.post("/login", loginUser); //esto es para login//
+routes.post("/checkemail", checkEmail) //controla que no exista el mail en user//
 
 routes.get("/songs", getSongs); //esto es para el buscador//
 
