@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 import Input from "../Input/Input";
@@ -9,25 +9,65 @@ import "./RegisterEmail.css";
 
 function LogIn() {
   const navigate = useNavigate();
+  const [email, setEmail] = useState("");
   const onclick = () => {
     navigate(`/login/user`);
   };
-  const handleOnChange = (event) => {
-    console.log(event.target.value);
+
+  const FuncionCheckEmail = async (event) => {
+    event.preventDefault();
+
+    const myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const raw = JSON.stringify({
+      email: email,
+    });
+
+    const requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+
+    try {
+      const response = await fetch(
+        "http://localhost:8000/api/checkemail",
+        requestOptions
+      );
+      if (response.ok) {
+        const respuesta = await response.json();
+        navigate(`/login/user`);
+      } else {
+        const respuesta = await response.json();
+        alert("Email ya registrado");
+      }
+    } catch (error) {
+      alert(error.message);
+    }
   };
+
   return (
     <div className="divLogInEmailContainer">
-      <Link to={"/"} className="link">
-        <Header name="Crear Cuenta" />
-      </Link>
-      <h1> ¿Cuál es tu correo electrónico?</h1>
-      <h3> correo electrónico:</h3>
+      <form action="submit" onSubmit={FuncionCheckEmail}>
+        <Link to={"/"} className="link">
+          <Header name="Crear Cuenta" />
+        </Link>
+        <h1> ¿Cuál es tu correo electrónico?</h1>
+        <h3> correo electrónico:</h3>
 
-      <Input type="email" onChange={handleOnChange} />
-      <Link to={`/login/user`} className="link">
-        <Buttons title="continuar" color="orange" onclick={onclick} />
-      </Link>
-      <p>Deberás poder confirmar luego</p>
+        {/* <Input type="email" onChange={handleOnChange} /> */}
+        <Input
+          type="email"
+          onChange={(event) => {
+            setEmail(event.target.value);
+          }}
+          value={email}
+        />
+        <Buttons type="submit" title="continuar" color="orange" />
+        <p>Deberás poder confirmar luego</p>
+      </form>
     </div>
   );
 }
