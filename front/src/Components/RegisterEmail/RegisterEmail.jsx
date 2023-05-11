@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-import SearchBar from "../SearchBar/SearchBar";
+import Input from "../Input/Input";
 import Buttons from "../Buttons/Buttons";
 import Header from "../Header/Header";
 
@@ -17,14 +17,14 @@ function LogIn() {
   };
   return (
     <div className="divLogInEmailContainer">
-      <Link to={"/"}>
+      <Link to={"/"} className="link">
         <Header name="Crear Cuenta" />
       </Link>
       <h1> ¿Cuál es tu correo electrónico?</h1>
       <h3> correo electrónico:</h3>
 
-      <SearchBar onChange={handleOnChange} />
-      <Link to={`/login/user`}>
+      <Input type="email" onChange={handleOnChange} />
+      <Link to={`/login/user`} className="link">
         <Buttons title="continuar" color="orange" onclick={onclick} />
       </Link>
       <p>Deberás poder confirmar luego</p>

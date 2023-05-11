@@ -3,10 +3,14 @@ import "./SetMusic.css";
 
 function SetMusic(props) {
   return (
-    <div className="divSetMusic">
+    <div className="divSetMusicContainer">
       <img src={props.img} alt="" className="imgSetMusic" />
-      <h5 className="headerSetMusic"> {props.title} </h5>
-      <p className="paragraphSetMusic"> {props.paragraph} </p>
+      <div className="divSetMusicText">
+        <h5 className="headerSetMusic">
+          <span>{props.title}</span>
+        </h5>
+        <p className="paragraphSetMusic"> {props.paragraph} </p>
+      </div>
     </div>
   );
 }
