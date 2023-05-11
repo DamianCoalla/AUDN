@@ -18,6 +18,26 @@ exports.regUser = async (req, res) => {
   }
 };
 
+exports.checkEmail = async (req, res) => {
+  const { email } = req.body;
+  knex("user")
+    .where({ email: email })
+    .then((resultado) => {
+      if (!resultado.length) {
+       res.status(200).json({
+          message: "Email disponible para registro",
+        });
+      } 
+      else{
+        res.status(400).json({message: "El email no está disponible"})
+      }
+    })
+    .catch((error) => {
+      res.status(400).json({ error: error.message });
+    });
+};
+
+
 exports.loginUser = async (req, res) => {
   const { name, password } = req.body;
   knex("user")
