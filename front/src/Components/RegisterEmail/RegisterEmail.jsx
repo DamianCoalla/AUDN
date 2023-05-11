@@ -18,7 +18,7 @@ function LogIn() {
   return (
     <div className="divLogInEmailContainer">
       <Link to={"/"} className="link">
-        <Header name="Crear Cuenta" />
+        <Header title="Crear Cuenta" />
       </Link>
       <h1> ¿Cuál es tu correo electrónico?</h1>
       <h3> correo electrónico:</h3>

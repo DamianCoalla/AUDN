@@ -6,7 +6,8 @@ function Header(props) {
   return (
     <div className="divHeaderContainer">
       <img src={backArrow} alt="backArrow" />
-      <span>{props.name}</span>
+      <p>{props.paragraph}</p>
+      <span>{props.title}</span>
     </div>
   );
 }

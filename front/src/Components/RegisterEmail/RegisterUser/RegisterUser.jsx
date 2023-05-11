@@ -15,7 +15,7 @@ function LogInUser() {
     <>
       <div className="divLogInuserContainer">
         <Link to={"/login"} className="link">
-          <Header name="Crear Cuenta" />
+          <Header title="Crear Cuenta" />
         </Link>
         <h1>Ingrese un nombre de usuario y contraseña</h1>
         <h3>Nombre de Usuario:</h3>
