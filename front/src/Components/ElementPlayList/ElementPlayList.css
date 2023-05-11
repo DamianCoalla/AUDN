@@ -1,0 +1,28 @@
+.imgSize {
+  width: 90px;
+  height: 80px;
+  margin-left: -60px;
+}
+.liDisplay {
+  display: flex;
+  color: black;
+}
+
+.divPlaylistText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  text-align: justify;
+}
+
+.divDotContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+}
+.imgDots {
+  height: 40px;
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "../Header/Header.jsx";
+import Header from "../../Header/Header.jsx";
 import "./MainCupido.css";
-import Buttons from "../Buttons/Buttons.jsx";
+import Buttons from "../../Buttons/Buttons.jsx";
 
 import { useNavigate, Link } from "react-router-dom";
-import Carrousel from "../Carrousel/Carrousel.jsx";
+import Carrousel from "../../Carrousel/Carrousel.jsx";
 
 function MainCupido() {
   const navigate = useNavigate();

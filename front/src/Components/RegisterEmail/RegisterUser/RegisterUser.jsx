@@ -54,6 +54,7 @@ function LogInUser() {
   return (
     <>
       <div className="divLogInuserContainer">
+
         <form action="submit" onSubmit={FuncionRegUser}>
           <Link to={"/login"} className="link">
             <Header name="Crear Cuenta" />
@@ -85,6 +86,7 @@ function LogInUser() {
           </div>
           <Buttons title="Continuar" color="orange" />
         </form>
+
       </div>
     </>
   );

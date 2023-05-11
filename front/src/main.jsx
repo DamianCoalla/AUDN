@@ -8,8 +8,9 @@ import "./index.css";
 import Home from "./Components/Home/Home.jsx";
 import LogInEmail from "./Components/RegisterEmail/RegisterEmail.jsx";
 import LogInUser from "./Components/RegisterEmail/RegisterUser/RegisterUser.jsx";
-import MainCupido from "./Components/MainCupido/MainCupido.jsx";
-import MainContextual from "./Components/MainContextual/MainContextual.jsx"
+import MainCupido from "./Components/Home/MainCupido/MainCupido.jsx";
+import MainContextual from "./Components/Home/MainContextual/MainContextual.jsx";
+import PlayList from "./Components/PlayList/PlayList.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
   {
     path: "/musicacontextual",
     element: <MainContextual />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/playlist",
+    element: <PlayList />,
     errorElement: <ErrorPage />,
   },
 ]);

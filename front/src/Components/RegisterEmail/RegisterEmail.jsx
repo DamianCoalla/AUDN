@@ -50,6 +50,7 @@ function LogIn() {
 
   return (
     <div className="divLogInEmailContainer">
+
       <form action="submit" onSubmit={FuncionCheckEmail}>
         <Link to={"/"} className="link">
           <Header name="Crear Cuenta" />
@@ -68,6 +69,7 @@ function LogIn() {
         <Buttons type="submit" title="continuar" color="orange" />
         <p>Deberás poder confirmar luego</p>
       </form>
+
     </div>
   );
 }
