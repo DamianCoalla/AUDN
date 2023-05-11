@@ -1,3 +1,13 @@
-.divSetMusic {
+.divSetMusicContainer {
   display: flex;
+  border: 1px black solid;
+  padding: 12px 16px;
+  gap: 12px;
+  border-radius: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+h5 span {
+  font-weight: bold;
 }

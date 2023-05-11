@@ -16,20 +16,20 @@ function Home() {
         <img src={bellActive} alt="bell" className="imgBell" />
       </div>
 
-      <Link to={"/cupidomusical"}>
-      <SetMusic 
-        img={cupido}
-        title="Cupido Musical"
-        paragraph="Tus artistas favoritos niunca van a dejarteel corazón roto"
-      />
+      <Link to={"/cupidomusical"} className="link">
+        <SetMusic
+          img={cupido}
+          title="Cupido Musical"
+          paragraph="Tus artistas favoritos niunca van a dejarteel corazón roto"
+        />
       </Link>
-      <Link to={"/musicaContextual"}>
-      <SetMusic
-        img={interrogationMark}
-        title="Música Contextual"
-        paragraph="Creamos la playlist perfecta para cualquier situación"
-        
-      /></Link>
+      <Link to={"/musicaContextual"} className="link">
+        <SetMusic
+          img={interrogationMark}
+          title="Música Contextual"
+          paragraph="Creamos la playlist perfecta para cualquier situación"
+        />
+      </Link>
     </>
   );
 }

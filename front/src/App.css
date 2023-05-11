@@ -1,4 +1,7 @@
 #root {
   text-align: center;
-  overflow-x:hidden;
+  overflow-x: hidden;
+}
+.link {
+  text-decoration: none;
 }

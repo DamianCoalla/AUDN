@@ -20,7 +20,7 @@ function Start() {
       <img src={logo} alt="logo" />
       <h1>Música a medida.</h1>
       <div className="divBtnscontainer">
-        <Link to={`/login`}>
+        <Link to={`/login`} className="link">
           <Buttons
             title="Registrarse Gratis"
             onClick={onclick}

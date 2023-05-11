@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "../../SearchBar/SearchBar";
+import Input from "../../Input/Input";
 import Buttons from "../../Buttons/Buttons";
 import Header from "../../Header/Header";
 import { Link, useNavigate } from "react-router-dom";
@@ -14,14 +14,14 @@ function LogInUser() {
   return (
     <>
       <div className="divLogInuserContainer">
-        <Link to={"/login"}>
+        <Link to={"/login"} className="link">
           <Header name="Crear Cuenta" />
         </Link>
-        <h1>Ingrese un nombre deusuario y contraseña</h1>
+        <h1>Ingrese un nombre de usuario y contraseña</h1>
         <h3>Nombre de Usuario:</h3>
-        <SearchBar />
+        <Input type="text" />
         <h3>Contraseña</h3>
-        <SearchBar />
+        <Input type="password" />
         <p>Deberás poder confirmar luego</p>
         <div className="divTermsAndConditionsContainer">
           <input type="checkbox" name="termsAndConditions" id="" />
@@ -30,7 +30,7 @@ function LogInUser() {
             <span> Condiciones.</span>
           </p>
         </div>
-        <Link to={`/home`}>
+        <Link to={`/home`} className="link">
           <Buttons title="Continuar" color="orange" onClick={onclick} />
         </Link>
       </div>
