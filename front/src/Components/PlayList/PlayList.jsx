@@ -11,6 +11,7 @@ import sincronization from "../../assets/icons/state=active-1.svg";
 
 import elvis from "../../assets/icons/elvis.jpeg";
 import ElementPlayList from "../ElementPlayList/ElementPlayList.jsx";
+import NavBar from "../NavBar/NavBar.jsx";
 
 function PlayList() {
   return (
@@ -48,12 +49,13 @@ function PlayList() {
         </div>
 
         <img src={sincronization} alt="flechas de sincronización" />
-        <button>
+        <button className="btnPlayList">
           <img src={btnPlay} alt="botón de play" />
         </button>
       </section>
 
       <ElementPlayList img={elvis} song="hola mundo" artist="Elvis" />
+      <NavBar color="orange" />
     </div>
   );
 }

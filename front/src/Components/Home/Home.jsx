@@ -6,6 +6,7 @@ import cupido from "../../assets/icons/cupido.png";
 import interrogationMark from "../../assets/icons/interrogationMark.png";
 import bellActive from "../../assets/icons/style=outline, state=active, notification=true.svg";
 import clockInactive from "../../assets/icons/state=inactive.svg";
+import NavBar from "../NavBar/NavBar";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
           paragraph="Creamos la playlist perfecta para cualquier situación"
         />
       </Link>
+      <NavBar color="orange" />
     </>
   );
 }

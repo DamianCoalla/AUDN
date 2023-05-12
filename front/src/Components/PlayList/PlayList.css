@@ -15,3 +15,7 @@ article img {
   display: flex;
   justify-content: space-evenly;
 }
+.btnPlayList {
+  border: none;
+  background: none;
+}

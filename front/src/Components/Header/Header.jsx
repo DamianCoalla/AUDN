@@ -5,9 +5,11 @@ import backArrow from "../../assets/icons/position=left-1.svg";
 function Header(props) {
   return (
     <div className="divHeaderContainer">
-      <img src={backArrow} alt="backArrow" />
-      <p>{props.paragraph}</p>
-      <span>{props.title}</span>
+      <img src={backArrow} alt="backArrow" className="imgHeaderBackArrow" />
+      <div className="divHeaderText">
+        <p>{props.paragraph}</p>
+        <span>{props.title}</span>
+      </div>
     </div>
   );
 }

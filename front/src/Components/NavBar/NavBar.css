@@ -1,0 +1,14 @@
+.navNavBarContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-orange {
+  height: 80px;
+  background: linear-gradient(#ffd6a6 15%, #fdfeff);
+}
+
+div button {
+  background: none;
+  border: none;
+}
