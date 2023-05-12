@@ -6,7 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 import "./RegisterUser.css";
 
-function LogInUser() {
+function RegisterUser() {
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -23,7 +23,8 @@ function LogInUser() {
 
     const raw = JSON.stringify({
       name: name,
-      email: "maria@gmail.com", //necesitamos que este dato provenga de la página anteior//
+      email: JSON.parse(localStorage.getItem("email")),
+      // email: "Josesito@gmail.com", //necesitamos que este dato provenga de la página anteior//
       password: password,
     });
 
@@ -54,14 +55,14 @@ function LogInUser() {
   return (
     <>
       <div className="divLogInuserContainer">
-
         <form action="submit" onSubmit={FuncionRegUser}>
-          <Link to={"/login"} className="link">
-            <Header name="Crear Cuenta" />
+          <Link to={"/register"} className="link">
+            <Header title="Crear Cuenta" />
           </Link>
           <h1>Ingrese un nombre de usuario y contraseña</h1>
           <h3>Nombre de Usuario:</h3>
           <Input
+            placeHolder="Nombre de Usuario"
             type="text"
             onChange={(event) => {
               setName(event.target.value);
@@ -70,6 +71,7 @@ function LogInUser() {
           />
           <h3>Contraseña</h3>
           <Input
+            placeHolder="Contraseña"
             type="password"
             onChange={(event) => {
               setPassword(event.target.value);
@@ -86,10 +88,9 @@ function LogInUser() {
           </div>
           <Buttons title="Continuar" color="orange" />
         </form>
-
       </div>
     </>
   );
 }
 
-export default LogInUser;
+export default RegisterUser;

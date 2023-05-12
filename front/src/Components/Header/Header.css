@@ -1,6 +1,17 @@
 .divHeaderContainer {
   display: flex;
-  justify-content: space-evenly;
-  width: 100vw;
+  justify-content: start;
+  align-items: center;
+  width: 500px;
   margin-right: 130px;
+  height: 80px;
+
+  background: linear-gradient(#ffd6a6 15%, #fdfeff);
+}
+
+.imgHeaderBackArrow {
+  height: 35px;
+}
+.divHeaderText {
+  margin-left: 120px;
 }

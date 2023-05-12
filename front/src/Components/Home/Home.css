@@ -1,6 +1,7 @@
 .containerHomeHeader {
   display: flex;
   justify-content: space-around;
+  background: linear-gradient(#ffd6a6 15%, #fdfeff);
 }
 
 .imgClock {

@@ -7,11 +7,11 @@ import Header from "../Header/Header";
 
 import "./RegisterEmail.css";
 
-function LogIn() {
+function RegisterEmail() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const onclick = () => {
-    navigate(`/login/user`);
+    navigate(`/register/user`);
   };
 
   const FuncionCheckEmail = async (event) => {
@@ -38,7 +38,9 @@ function LogIn() {
       );
       if (response.ok) {
         const respuesta = await response.json();
-        navigate(`/login/user`);
+        localStorage.setItem("email", respuesta.email);
+        console.log(email);
+        navigate(`/register/user`);
       } else {
         const respuesta = await response.json();
         alert("Email ya registrado");
@@ -49,11 +51,10 @@ function LogIn() {
   };
 
   return (
-    <div className="divLogInEmailContainer">
-
+    <div className="">
       <form action="submit" onSubmit={FuncionCheckEmail}>
         <Link to={"/"} className="link">
-          <Header name="Crear Cuenta" />
+          <Header title="Crear Cuenta" />
         </Link>
         <h1> ¿Cuál es tu correo electrónico?</h1>
         <h3> correo electrónico:</h3>
@@ -61,6 +62,7 @@ function LogIn() {
         {/* <Input type="email" onChange={handleOnChange} /> */}
         <Input
           type="email"
+          placeHolder="E-mail"
           onChange={(event) => {
             setEmail(event.target.value);
           }}
@@ -69,9 +71,8 @@ function LogIn() {
         <Buttons type="submit" title="continuar" color="orange" />
         <p>Deberás poder confirmar luego</p>
       </form>
-
     </div>
   );
 }
 
-export default LogIn;
+export default RegisterEmail;

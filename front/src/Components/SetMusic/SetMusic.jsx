@@ -5,7 +5,7 @@ function SetMusic(props) {
   return (
     <div className="divSetMusicContainer">
       <img src={props.img} alt="" className="imgSetMusic" />
-      <div className="divSetMusicText">
+      <div className="">
         <h5 className="headerSetMusic">
           <span>{props.title}</span>
         </h5>
