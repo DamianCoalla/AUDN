@@ -39,7 +39,6 @@ function RegisterEmail() {
       if (response.ok) {
         const respuesta = await response.json();
         localStorage.setItem("email", respuesta.email);
-        console.log(email);
         navigate(`/register/user`);
       } else {
         const respuesta = await response.json();
