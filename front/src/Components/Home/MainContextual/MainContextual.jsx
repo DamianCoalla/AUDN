@@ -3,7 +3,7 @@ import "./MainContextual.css";
 import { useNavigate, Link } from "react-router-dom";
 import Header from "../../Header/Header.jsx";
 import SelectionList from "../../SelectionList/SelectionList";
-import Buttons from "../../Buttons/Buttons.jsx";
+import Button from "../../Button/Button.jsx";
 
 function MainContextual() {
   const navigate = useNavigate();
@@ -37,7 +37,7 @@ function MainContextual() {
 
         <h2>Selecciona hasta 3 géneros:</h2>
         <Link to={"/playlist"} className="link">
-          <Buttons title="Crear Playlist" color="orange" />
+          <Button title="Crear Playlist" color="orange" />
         </Link>
       </div>
     </div>

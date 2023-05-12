@@ -6,7 +6,7 @@ function Input(props) {
     <div>
       <input
         type={`${props.type}`}
-        placeholder={`${props.placeHolder}`}
+        /* placeholder={`${props.placeHolder}` }*/
         className="inputSearchBar"
         onChange={props.onChange}
       />

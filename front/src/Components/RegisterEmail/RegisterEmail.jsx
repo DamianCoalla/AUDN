@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
 import Input from "../Input/Input";
-import Buttons from "../Buttons/Buttons";
+import Button from "../Button/Button";
 import Header from "../Header/Header";
 
 import "./RegisterEmail.css";
@@ -62,13 +62,17 @@ function RegisterEmail() {
         {/* <Input type="email" onChange={handleOnChange} /> */}
         <Input
           type="email"
-          placeHolder="E-mail"
           onChange={(event) => {
             setEmail(event.target.value);
           }}
           value={email}
         />
-        <Buttons type="submit" title="continuar" color="orange" />
+        <Button
+          type="submit"
+          title="continuar"
+          color="orange"
+          disabled={true}
+        />
         <p>Deberás poder confirmar luego</p>
       </form>
     </div>
