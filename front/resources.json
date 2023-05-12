@@ -15,9 +15,9 @@
 ]
 ,
 "users":[
-    {"id":3, "user1": "./src/assets/images/user2.png"},
-    {"id":4, "user2": "./src/assets/images/user1.png"},
-    {"id":5, "user3": "./src/assets/images/user4.png"},
-    {"id":6, "user4": "./src/assets/images/user3.png"}
+    {"id":3, "user": "./src/assets/images/user2.png"},
+    {"id":4, "user": "./src/assets/images/user1.png"},
+    {"id":5, "user": "./src/assets/images/user4.png"},
+    {"id":6, "user": "./src/assets/images/user3.png"}
 ]
 }
