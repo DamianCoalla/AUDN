@@ -3,15 +3,15 @@
 {
     "songs": [ 
      {"id":1, "tapaAlbum": "./src/assets/images/alejo y los trogloditas.jpeg"},
-     {"id":2, "tapaAlbum": "./src/assets/images/metal corbo.jpg"},
-     {"id":3, "tapaAlbum": "./src/assets/images/JP big band jazz.png"},
-     {"id":4, "tapaAlbum": "./src/assets/images/BailaEze, Baila.png"},
-     {"id":5, "tapaAlbum": "./src/assets/images/Jazzy Mel web_1200w.jpg"},
-     {"id":6, "tapaAlbum": "./src/assets/images/alejo y los trogloditas.jpeg"},
-     {"id":7, "tapaAlbum": "./src/assets/images/metal corbo.jpg"},
+     {"id":2, "tapaAlbum": "./src/assets/images/Fran a manopla.png"},
+     {"id":3, "tapaAlbum": "./src/assets/images/metal corbo.jpg"},
+     {"id":4, "tapaAlbum": "./src/assets/images/JP big band jazz.png"},
+     {"id":5, "tapaAlbum": "./src/assets/images/BailaEze, Baila.jpg"},
+     {"id":11, "tapaAlbum": "./src/assets/images/BailaEze, Baila.jpeg"},
+     {"id":7, "tapaAlbum": "./src/assets/images/Jazzy Mel web_1200w.png"},
      {"id":8, "tapaAlbum": "./src/assets/images/JP big band jazz.png"},
-     {"id":9, "tapaAlbum": "./src/assets/images/BailaEze, Baila.png"},
-     {"id":10, "tapaAlbum": "./src/assets/images/alejo y los trogloditas.jpeg"}
+     {"id":9, "tapaAlbum": "./src/assets/images/metal corbo.jpg"},
+     {"id":10, "tapaAlbum": "./src/assets/images/JP big band jazz.png"}
 ]
 ,
 "users":[
