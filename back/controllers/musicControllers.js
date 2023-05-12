@@ -26,6 +26,7 @@ exports.checkEmail = async (req, res) => {
       if (!resultado.length) {
        res.status(200).json({
           message: "Email disponible para registro",
+          email
         });
       } 
       else{
