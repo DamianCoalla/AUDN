@@ -3,7 +3,7 @@ import "./LogIn.css";
 
 import Header from "../Header/Header";
 import Input from "../Input/Input";
-import Buttons from "../Buttons/Buttons";
+import Button from "../Button/Button";
 
 function LogIn() {
   return (
@@ -16,7 +16,7 @@ function LogIn() {
       <h3>Contraseña:</h3>
       <Input />
 
-      <Buttons title="Iniciar sesión" color="orange" />
+      <Button title="Iniciar sesión" color="orange" disabled={true} />
       <a href="">
         <p>¿Olvidaste tu Contraseña?</p>
       </a>

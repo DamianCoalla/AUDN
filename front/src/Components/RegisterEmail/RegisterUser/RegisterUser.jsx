@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Input from "../../Input/Input";
-import Buttons from "../../Buttons/Buttons";
+import Button from "../../Button/Button";
 import Header from "../../Header/Header";
 import { Link, useNavigate } from "react-router-dom";
 
@@ -62,7 +62,6 @@ function RegisterUser() {
           <h1>Ingrese un nombre de usuario y contraseña</h1>
           <h3>Nombre de Usuario:</h3>
           <Input
-            placeHolder="Nombre de Usuario"
             type="text"
             onChange={(event) => {
               setName(event.target.value);
@@ -71,7 +70,6 @@ function RegisterUser() {
           />
           <h3>Contraseña</h3>
           <Input
-            placeHolder="Contraseña"
             type="password"
             onChange={(event) => {
               setPassword(event.target.value);
@@ -86,7 +84,7 @@ function RegisterUser() {
               <span> Condiciones.</span>
             </p>
           </div>
-          <Buttons title="Continuar" color="orange" />
+          <Button title="Continuar" color="orange" disabled={true} />
         </form>
       </div>
     </>

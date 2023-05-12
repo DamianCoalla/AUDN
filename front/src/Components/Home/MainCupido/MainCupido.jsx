@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../Header/Header.jsx";
 import "./MainCupido.css";
-import Buttons from "../../Buttons/Buttons.jsx";
+import Button from "../../Button/Button.jsx";
 
 import { useNavigate, Link } from "react-router-dom";
 import Carrousel from "../../Carrousel/Carrousel.jsx";
