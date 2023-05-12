@@ -18,7 +18,7 @@ function MainCupido() {
       </Link>
       <Carrousel />
 
-      <Buttons title="Crear Playlist" color="orange" />
+      <Button title="Crear Playlist" color="orange" />
     </div>
   );
 }

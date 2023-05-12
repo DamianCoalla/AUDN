@@ -7,8 +7,9 @@ function Header(props) {
     <div className="divHeaderContainer">
       <img src={backArrow} alt="backArrow" className="imgHeaderBackArrow" />
       <div className="divHeaderText">
-        <p>{props.paragraph}</p>
-        <span>{props.title}</span>
+        <p>{props.paragraph}
+        </p>
+        <span className="HeaderTitle">{props.title}</span>
       </div>
     </div>
   );
