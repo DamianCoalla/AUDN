@@ -3,6 +3,7 @@ import Input from "../../Input/Input";
 import Button from "../../Button/Button";
 import Header from "../../Header/Header";
 import { Link, useNavigate } from "react-router-dom";
+import Placeholder from "../../../assets/icons/icon-placeholder.svg"
 
 import "./RegisterUser.css";
 
@@ -55,32 +56,32 @@ function RegisterUser() {
   return (
     <>
       <div className="divLogInuserContainer">
-        <form action="submit" onSubmit={FuncionRegUser}>
+        <form action="submit" onSubmit={FuncionRegUser} className="formUser">
           <Link to={"/register"} className="link">
             <Header title="Crear Cuenta" />
           </Link>
-          <h1>Ingrese un nombre de usuario y contraseña</h1>
-          <h3>Nombre de Usuario:</h3>
+          <h2>Ingresa un nombre de usuario y contraseña.</h2><br />
+          <h3>Nombre de Usuario:</h3><br />
           <Input
             type="text"
             onChange={(event) => {
               setName(event.target.value);
             }}
             value={name}
-          />
-          <h3>Contraseña</h3>
+          /> <br />
+          <h4>Contraseña:</h4> <br />
           <Input
             type="password"
             onChange={(event) => {
               setPassword(event.target.value);
             }}
             value={password}
-          />
-          <p>Deberás poder confirmar luego</p>
+          /> <br />
+          <p className="security">Deberá contener al menos 8 caracteres.</p> <br />
           <div className="divTermsAndConditionsContainer">
-            <input type="checkbox" name="termsAndConditions" id="" />
-            <p>
-              He leido y acepto los <span>Terminos </span> y
+            <input type="checkbox" name="termsAndConditions" id="" className="checkboxTerms" />
+            <p className="conditions">
+              He leído y acepto los <span>Términos </span> y
               <span> Condiciones.</span>
             </p>
           </div>

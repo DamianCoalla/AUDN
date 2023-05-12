@@ -1,17 +1,23 @@
 .divHeaderContainer {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  width: 500px;
-  margin-right: 130px;
+  
+  
   height: 80px;
-
-  background: linear-gradient(#ffd6a6 15%, #fdfeff);
+  font-family: 'Rubik', sans-serif;
+  background: linear-gradient(to bottom, rgba(255,142,10, 0.2), rgba(255, 255, 255, 1));
 }
 
 .imgHeaderBackArrow {
-  height: 35px;
+  
+  position: relative;
+  right: 110px; 
 }
-.divHeaderText {
-  margin-left: 120px;
+
+.HeaderTitle {
+  color: #26262E;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
