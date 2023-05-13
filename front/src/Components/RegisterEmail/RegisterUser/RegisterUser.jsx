@@ -21,11 +21,10 @@ function RegisterUser() {
 
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-
+    console.log("valor", localStorage.getItem("email"));
     const raw = JSON.stringify({
       name: name,
-      email: JSON.parse(localStorage.getItem("email")),
-      // email: "Josesito@gmail.com", //necesitamos que este dato provenga de la página anteior//
+      email: localStorage.getItem("email"),
       password: password,
     });
 
