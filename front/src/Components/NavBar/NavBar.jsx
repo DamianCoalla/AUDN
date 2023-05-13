@@ -3,15 +3,15 @@ import "./NavBar.css";
 import { Link } from "react-router-dom";
 
 import home from "../../assets/icons/style=fill, state=active.svg";
-import profile from "../../assets/icons/style=fill, state=active, add-friend=false.svg";
-import search from "../../assets/icons/style=outline, state=active-1.svg";
-import friends from "../../assets/icons/style=fill, state=active-2.svg";
+import profile from "../../assets/icons/style=outline, state=inactive, add-friend=false.svg";
+import search from "../../assets/icons/style=outline, state=inactive-1.svg";
+import friends from "../../assets/icons/style=outline, state=inactive-2.svg";
 
 function NavBar(props) {
   return (
     <nav className={`navNavBarContainer nav-${props.color}`}>
       <div>
-        <Link to={"/homemenu"} className="link">
+        <Link to={"/home"} className="link">
           <button>
             <img src={home} alt="Inicio" />
             <p>Inicio</p>

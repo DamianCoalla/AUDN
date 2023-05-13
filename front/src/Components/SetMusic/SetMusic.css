@@ -1,15 +1,35 @@
 .divSetMusicContainer {
   display: flex;
-  border: 1px black solid;
-  padding: 12px 16px;
+  border: 2px black solid;
   gap: 12px;
   border-radius: 0px 16px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  text-align: justify;
-}
+  
+  
+  
+  margin-top: 50px;
+   }
 
 h5 span {
-  font-weight: bold;
+  position: relative;
+  right: 50px;
+  color: #26262E;
+  font-size: 17px;
+  
 }
+
+.paragraphSetMusic {
+  position: relative;
+  left: 0px;
+  color: #45464B;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.textMusic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  
+}
+
