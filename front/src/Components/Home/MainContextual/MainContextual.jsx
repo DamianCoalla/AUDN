@@ -13,10 +13,10 @@ function MainContextual() {
   return (
     <div>
       <Link to="/home" className="link">
-        <Header onClick={onclick} name="musica contextual" />
+        <Header onClick={onclick} name="musica contextual" title="Música Contextual" />
       </Link>
       <div className="divMainContextualContainer">
-        <h2>¿Cuál es la ocasión?</h2>
+        <h2>¿Cuál es la ocasión?</h2> <br />
         <SelectionList
           text="Actividad"
           filter1="Ejercicio físico"
@@ -28,14 +28,22 @@ function MainContextual() {
           filter7="Estudiar"
           filter8="Relajación"
           filter9="Viajando"
-        />
-        <h2>¿Cómo te sientes?</h2>
-        <SelectionList text="Estado de ánimo" display="none" />
-        <h2>¿Cómo está el clima?</h2>
+        /> <br /><br />
+        <h2>¿Cómo te sientes?</h2> <br />
+        <SelectionList text="Estado de ánimo" display="none" /> <br /><br />
+        <h2>¿Cómo está el clima?</h2> <br />
 
-        <SelectionList text="Clima" display="none" />
+        <SelectionList text="Clima" display="none" /> <br /> <br />
 
-        <h2>Selecciona hasta 3 géneros:</h2>
+        <h2>Selecciona hasta 3 géneros:</h2> <br />
+        <Button title="Rock" /> <Button title="Country" /> <Button title="Soul" />
+        <Button title="Jazz" /> <Button title="Blues" /> <Button title="Hip-Hop" />
+        <Button title="Pop" /> <Button title="Reggae" /> <Button title="Folk" />
+        <Button title="R&B" /> <Button title="Clásico" /> <Button title="Alternativo" />
+        <Button title="Ambiente" /> <Button title="EDM" /> <Button title="Electrónica" />
+        <Button title="Disco" /> <Button title="New Age" /> <Button title="Punk" />
+
+
         <Link to={"/playlist"} className="link">
           <Button title="Crear Playlist" color="orange" />
         </Link>

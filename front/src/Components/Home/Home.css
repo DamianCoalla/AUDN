@@ -1,17 +1,37 @@
-.containerHomeHeader {
+.headerContent {
   display: flex;
   justify-content: space-around;
-  background: linear-gradient(#ffd6a6 15%, #fdfeff);
+  width: 400px;
+  background: linear-gradient(to bottom, rgba(255,142,10, 0.2), rgba(255, 255, 255, 1));
+
 }
 
+
 .imgClock {
-  margin-right: -130px;
+  left: 55px;
+  position: relative;
+  top: 50px;
 }
 
 .imgBell {
-  margin-right: -60px;
+  
+  position: relative;
+  top: 50px;
 }
 
 .headerHome {
-  margin-left: -50px;
+  
+  position: relative;
+  top: 50px;
+}
+
+.divCupidoMusical {
+position: relative;
+top: 25px;
+
+}
+
+.navNavBarContainer {
+  position: relative;
+  margin-top: 419px;
 }
