@@ -1,6 +1,4 @@
-.imgCarrousel {
-    
-    box-shadow: inset 0px 0px 6px rgba(8, 8, 17, 0.08), inset 2px 2px 4px rgba(8, 8, 17, 0.08);
-border-radius: 0px 30px 0px 0px;
-
+.imgCover{
+    width:200px;
+    height: 200px;
 }
