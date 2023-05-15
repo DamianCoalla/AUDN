@@ -1,0 +1,16 @@
+.navBarraUsers {
+    position: absolute;
+    width: 100%;
+    top: 345px;
+    
+}
+
+.imgProfile {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    margin-top: 60px;
+}
+
+

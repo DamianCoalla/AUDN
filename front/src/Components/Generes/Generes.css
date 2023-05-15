@@ -1,0 +1,20 @@
+.btnGeneres {
+    display: inline;
+    padding: 12px 16px;
+    border-radius: 0px 16px;
+    width: fit-content;
+    height: fit-content;   
+    letter-spacing: 2px;
+  }
+  
+ 
+  .bg-tranparent {
+    background-color: transparent;
+    border: 2px #000000 solid;
+  }
+  
+  
+  button:disabled {
+    background: #ccc;
+  }
+  
