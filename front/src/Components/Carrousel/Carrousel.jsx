@@ -79,15 +79,15 @@ function Carrousel() {
         {fullSongList.map((cancion) => {
           console.log(cancion);
 
-          const agregarPlayList = () => {
-            setFullSongList(...fullSongList, cancion);
-          };
+          // const agregarPlayList = () => {
+          //   setFullSongList(...fullSongList, cancion);
+          // };
 
           return (
             <SwiperSlide>
               <img src={cancion.url} className="imgAlbum" />
               <h2>{cancion.name}</h2>
-              <h2>{cancion.genere}</h2>
+              <h4>{cancion.genere}</h4>
             </SwiperSlide>
           );
         })}
@@ -98,10 +98,10 @@ function Carrousel() {
         ))} */}
       </Swiper>
 
-      {/* <Selection img={heart} onClick={agregarPlayList} /> */}
-      <button onClick={agregarPlayList}>
+      <Selection img={heart} />
+      {/* <button onClick={agregarPlayList}>
         <img src={heart} alt="" />
-      </button>
+      </button> */}
       <Selection img={cross} />
     </>
   );
