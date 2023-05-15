@@ -1,10 +1,12 @@
-import React from 'react'
-import "./Selection.css"
+import React from "react";
+import "./Selection.css";
 
 function Selection(props) {
   return (
-    <div className='divSelectionbutton'><img src={props.img} alt="" /></div>
-  )
+    <button className="divSelectionbutton">
+      <img src={props.img} alt="" />
+    </button>
+  );
 }
 
-export default Selection
+export default Selection;

@@ -41,7 +41,7 @@ exports.checkEmail = async (req, res) => {
 
 exports.loginUser = async (req, res) => {
   const { name, password } = req.body;
-  knex("user")
+await knex("user")
     .where({ name: name })
     .then(async (resultado) => {
       if (!resultado.length) {

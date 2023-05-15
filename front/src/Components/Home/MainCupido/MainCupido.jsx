@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../Header/Header.jsx";
 import "./MainCupido.css";
 import Button from "../../Button/Button.jsx";
@@ -18,7 +18,9 @@ function MainCupido() {
       </Link>
       <Carrousel />
 
-      <Button title="Crear Playlist" color="orange" />
+      <Link to={"/playlist"} className="link">
+        <Button title="Crear Playlist" color="orange" />
+      </Link>
     </div>
   );
 }

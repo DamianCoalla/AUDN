@@ -1,4 +1,35 @@
-.imgCover{
+/* .imgCover{
     width:200px;
     height: 200px;
-}
+} */
+
+#app {
+    height: 100%;
+  }
+
+  
+  /* .container2 {
+    background-color: green;
+  }
+   */
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100x;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .imgAlbum{
+    width: 150px;
+    height: 300px;
+  }

@@ -12,51 +12,56 @@ import sincronization from "../../assets/icons/state=active-1.svg";
 import elvis from "../../assets/icons/elvis.jpeg";
 import ElementPlayList from "../ElementPlayList/ElementPlayList.jsx";
 import NavBar from "../NavBar/NavBar.jsx";
+import { Link } from "react-router-dom";
 
 function PlayList() {
   return (
-    <div>
-      <div className="link">
-        <Header
-          paragraph="Playlist gererada de cupido musical"
-          title="PlayList Generada"
-        />
-      </div>
-
-      <article className="articleImgContainer">
-        <img src={elvis} alt="disco1" />
-        <img src={elvis} alt="disco2" />
-        <img src={elvis} alt="disco3" />
-        <img src={elvis} alt="disco4" />
-      </article>
-
-      <section className="sections">
+    <>
+      <div>
         <div>
-          <button>
-            <img src="" alt="logoChico" />
+          <Link to={"/home"} className="link">
+            <Header
+              paragraph="Playlist gererada de cupido musical"
+              title="PlayList Generada"
+            />
+          </Link>
+        </div>
+
+        <article className="articleImgContainer">
+          <img src={elvis} alt="disco1" />
+          <img src={elvis} alt="disco2" />
+          <img src={elvis} alt="disco3" />
+          <img src={elvis} alt="disco4" />
+        </article>
+
+        <section className="sections">
+          <div>
+            <button>
+              <img src="" alt="logoChico" />
+            </button>
+            <img src={verify} alt="verificado" />
+            <img src={share} alt="compartir" />
+          </div>
+
+          <p>hora bd</p>
+          <img src={clock} alt="reloj" />
+        </section>
+        <section className="sections">
+          <div>
+            <img src={sheet} alt="hoja" />
+            <p>Crear Copia</p>
+          </div>
+
+          <img src={sincronization} alt="flechas de sincronización" />
+          <button className="btnPlayList">
+            <img src={btnPlay} alt="botón de play" />
           </button>
-          <img src={verify} alt="verificado" />
-          <img src={share} alt="compartir" />
-        </div>
+        </section>
 
-        <p>hora bd</p>
-        <img src={clock} alt="reloj" />
-      </section>
-      <section className="sections">
-        <div>
-          <img src={sheet} alt="hoja" />
-          <p>Crear Copia</p>
-        </div>
-
-        <img src={sincronization} alt="flechas de sincronización" />
-        <button className="btnPlayList">
-          <img src={btnPlay} alt="botón de play" />
-        </button>
-      </section>
-
-      <ElementPlayList img={elvis} song="hola mundo" artist="Elvis" />
-      <NavBar color="orange" />
-    </div>
+        <ElementPlayList img={elvis} song="hola mundo" artist="Elvis" />
+        <NavBar color="orange" />
+      </div>
+    </>
   );
 }
 

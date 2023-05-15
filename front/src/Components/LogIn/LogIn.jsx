@@ -11,7 +11,9 @@ function LogIn() {
   const navigate = useNavigate();
 
   const LogInUser = async (event) => {
+    console.log("1");
     event.preventDefault();
+    console.log("2");
 
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
@@ -20,7 +22,7 @@ function LogIn() {
       name: user,
       password: password,
     });
-
+    console.log(raw);
     const requestOptions = {
       method: "POST",
       headers: myHeaders,
@@ -35,7 +37,7 @@ function LogIn() {
       if (response.ok) {
         const respuesta = await response.json();
         localStorage.setItem("token", respuesta.token);
-
+        console.log("Hola");
         navigate("/home");
       } else {
         const respuesta = await response.json();
@@ -47,34 +49,37 @@ function LogIn() {
   };
   return (
     <div className="divLogInContainer">
-      <form action="submit" onSubmit={LogInUser}>
-        <Header title="Iniciar sesión" />
+      {/* <form action="submit" onSubmit={LogInUser}> */}
+      <Header title="Iniciar sesión" />
 
-        <h3>Nomre de Usuario o E-mail:</h3>
-        <Input
-          type="text"
-          placeholder="Nombre de usuario"
-          onChange={(e) => {
-            setUser(e.target.value);
-          }}
-          value={user}
-        />
+      <h3>Nomre de Usuario o E-mail:</h3>
+      <Input
+        type="text"
+        onChange={(e) => {
+          console.log(e.target.value);
+          setUser(e.target.value);
+        }}
+        value={user}
+      />
 
-        <h3>Contraseña:</h3>
-        <Input
-          type="text"
-          placeholder="Ingrese la contraseña"
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-          value={password}
-        />
+      <h3>Contraseña:</h3>
+      <Input
+        type="text"
+        onChange={(e) => {
+          setPassword(e.target.value);
+        }}
+        value={password}
+      />
 
-        <Button title="Iniciar sesión" color="orange" /* disabled={true} */ />
-        <a href="">
-          <p>¿Olvidaste tu Contraseña, gil?</p>
-        </a>
-      </form>
+      <Button
+        title="Iniciar sesión"
+        color="orange"
+        onClick={LogInUser} /* disabled={true} */
+      />
+      <a href="">
+        <p>¿Olvidaste tu Contraseña, gil?</p>
+      </a>
+      {/* </form> */}
     </div>
   );
 }

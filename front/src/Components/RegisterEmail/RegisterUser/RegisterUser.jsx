@@ -3,7 +3,7 @@ import Input from "../../Input/Input";
 import Button from "../../Button/Button";
 import Header from "../../Header/Header";
 import { Link, useNavigate } from "react-router-dom";
-import Placeholder from "../../../assets/icons/icon-placeholder.svg"
+import Placeholder from "../../../assets/icons/icon-placeholder.svg";
 
 import "./RegisterUser.css";
 
@@ -55,22 +55,22 @@ function RegisterUser() {
   return (
     <>
       <div className="divLogInuserContainer">
-      <Link to={"/register"} className="link">
-      <Header title="Crear Cuenta" />
-      </Link>
+        <Link to={"/register"} className="link">
+          <Header title="Crear Cuenta" />
+        </Link>
         <form action="submit" onSubmit={FuncionRegUser} className="formUser">
-          
-           
-          
-          <h2>Ingresa un nombre de usuario y contraseña.</h2><br />
-          <h3>Nombre de Usuario:</h3><br />
+          <h2>Ingresa un nombre de usuario y contraseña.</h2>
+          <br />
+          <h3>Nombre de Usuario:</h3>
+          <br />
           <Input
             type="text"
             onChange={(event) => {
               setName(event.target.value);
             }}
             value={name}
-          /> <br /> <br />
+          />{" "}
+          <br /> <br />
           <h4>Contraseña:</h4> <br />
           <Input
             type="password"
@@ -78,16 +78,25 @@ function RegisterUser() {
               setPassword(event.target.value);
             }}
             value={password}
-          /> <br />
-          <p className="security">Deberá contener al menos 8 caracteres.</p> <br />
+          />{" "}
+          <br />
+          <p className="security">
+            Deberá contener al menos 8 caracteres.
+          </p>{" "}
+          <br />
           <div className="divTermsAndConditionsContainer">
-            <input type="checkbox" name="termsAndConditions" id="" className="checkboxTerms" />
+            <input
+              type="checkbox"
+              name="termsAndConditions"
+              id=""
+              className="checkboxTerms"
+            />
             <p className="conditions">
               He leído y acepto los <span>Términos </span> y
               <span> Condiciones.</span>
             </p>
           </div>
-          <Button title="Continuar" color="orange" disabled={true} />
+          <Button title="Continuar" color="orange" disabled={false} />
         </form>
       </div>
     </>
