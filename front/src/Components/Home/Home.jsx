@@ -42,7 +42,7 @@ function Home() {
       </Link>
       
       
-      <NavBar color="orange" />
+      <NavBar className="barraNav" color="orange" />
       
     </>
   );

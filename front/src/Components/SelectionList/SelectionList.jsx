@@ -19,14 +19,14 @@ function SelectionList(props) {
           {props.text}
         </option>
         <option value="option1">{props.filter1}</option>
-        <option value="option2">{props.filter2}</option>
-        <option value="option3">{props.filter3}</option>
-        <option value="option4">{props.filter4}</option>
-        <option value="option5">{props.filter5}</option>
-        <option value="option6">{props.filter6}</option>
-        <option value="option7">{props.filter7}</option>
-        <option value="option8">{props.filter8}</option>
-        <option value="option9">{props.filter9}</option>
+        <option value="option2" disabled selected>{props.filter2}</option>
+        <option value="option3" disabled selected>{props.filter3}</option>
+        <option value="option4" disabled selected>{props.filter4}</option>
+        <option value="option5" disabled selected>{props.filter5}</option>
+        <option value="option6" disabled selected>{props.filter6}</option>
+        <option value="option7" disabled selected>{props.filter7}</option>
+        <option value="option8" disabled selected>{props.filter8}</option>
+        <option value="option9" disabled selected>{props.filter9}</option>
       </select>
     </div>
   );

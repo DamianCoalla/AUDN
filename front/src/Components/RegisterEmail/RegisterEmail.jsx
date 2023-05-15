@@ -51,11 +51,13 @@ function RegisterEmail() {
 
   return (
     <div className="divLogInEmailContainer">
+              <Link to={"/"} className="link">
       <Header title="Crear Cuenta" />
+      </Link>
       <form action="submit" onSubmit={FuncionCheckEmail} className="formRegister">
-        <Link to={"/"} className="link">
+
           
-        </Link>
+        
         <h2> ¿Cuál es tu correo electrónico?</h2><br /><br />
         <h3> Correo electrónico:</h3> <br />
 

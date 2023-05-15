@@ -55,11 +55,13 @@ function RegisterUser() {
   return (
     <>
       <div className="divLogInuserContainer">
+      <Link to={"/register"} className="link">
       <Header title="Crear Cuenta" />
+      </Link>
         <form action="submit" onSubmit={FuncionRegUser} className="formUser">
-          <Link to={"/register"} className="link">
+          
            
-          </Link>
+          
           <h2>Ingresa un nombre de usuario y contraseña.</h2><br />
           <h3>Nombre de Usuario:</h3><br />
           <Input

@@ -4,6 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Header from "../../Header/Header.jsx";
 import SelectionList from "../../SelectionList/SelectionList";
 import Button from "../../Button/Button.jsx";
+import Generes from "../../generes/Generes";
 
 function MainContextual() {
   const navigate = useNavigate();
@@ -36,16 +37,18 @@ function MainContextual() {
         <SelectionList text="Clima" display="none" /> <br /> <br />
 
         <h2>Selecciona hasta 3 géneros:</h2> <br />
-        <Button title="Rock" /> <Button title="Country" /> <Button title="Soul" />
-        <Button title="Jazz" /> <Button title="Blues" /> <Button title="Hip-Hop" />
-        <Button title="Pop" /> <Button title="Reggae" /> <Button title="Folk" />
-        <Button title="R&B" /> <Button title="Clásico" /> <Button title="Alternativo" />
-        <Button title="Ambiente" /> <Button title="EDM" /> <Button title="Electrónica" />
-        <Button title="Disco" /> <Button title="New Age" /> <Button title="Punk" />
+        <div className="divGeneres">
+          <Generes title="Rock" color="tranparent"/> <Generes title="Country" color="tranparent"/> <Generes title="Soul" color="tranparent"/>
+          <Generes title="Jazz" color="tranparent"/> <Generes title="Blues" color="tranparent"/> <Generes title="Hip-Hop" color="tranparent"/>
+          <Generes title="Pop" color="tranparent"/> <Generes title="Reggae" color="tranparent"/> <Generes title="Folk" color="tranparent"/>
+          <Generes title="R&B" color="tranparent"/> <Generes title="Clásico" color="tranparent"/> <Generes title="Alternativo" color="tranparent"/>
+          <Generes title="Ambiente" color="tranparent"/> <Generes title="EDM" color="tranparent"/> <Generes title="Electrónica" color="tranparent"/>
+          <Generes title="Disco" color="tranparent"/> <Generes title="New Age" color="tranparent"/> <Generes title="Punk" color="tranparent"/>
+        </div>
 
 
         <Link to={"/playlist"} className="link">
-          <Button title="Crear Playlist" color="orange" />
+          <Button title="Crear Playlist" color="tranparent" />
         </Link>
       </div>
     </div>
