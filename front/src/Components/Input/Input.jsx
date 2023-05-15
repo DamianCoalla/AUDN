@@ -3,20 +3,20 @@ import "./Input.css";
 import Data from "../../../resources";
 
 function Input(props) {
-  const [searchTerm, setSearchTerm] = useState("");
+  // const [searchTerm, setSearchTerm] = useState("");
 
-  function handleSearchChange(event) {
-    setSearchTerm(event.target.value);
-  }
+  // function handleSearchChange(event) {
+  //   setSearchTerm(event.target.value);
+  // }
 
-  useEffect(() => {
-    const searchResults = Data.filter((songs) =>
-      // pokemon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      songs.algo.toString().includes(searchTerm.toLowerCase())
-    );
-    // props.setPokeList(searchResults);
-  }, [searchTerm]);
-  console.log(searchTerm);
+  // useEffect(() => {
+  //   const searchResults = Data.filter((songs) =>
+  //     // pokemon.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  //     songs.algo.toString().includes(searchTerm.toLowerCase())
+  //   );
+  //   // props.setPokeList(searchResults);
+  // }, [searchTerm]);
+  // console.log(searchTerm);
 
   return (
     <div>
@@ -24,10 +24,9 @@ function Input(props) {
         type={`${props.type}`}
         /* placeholder={`${props.placeHolder}` }*/
         className="inputSearchBar"
-        // onChange={props.onChange,}
-        placeholder="Search"
-        value={searchTerm}
-        onChange={handleSearchChange}
+        onChange={props.onChange}
+        // value={searchTerm}
+        // onChange={handleSearchChange}
       />
     </div>
   );

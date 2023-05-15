@@ -9,6 +9,7 @@ function Button(props) {
       <button
         className={`btnStart bg-${props.color}`}
         disabled={props.disabled}
+        onClick={props.onClick}
       >
         <img src={props.icon} alt="" />
         {props.title}
